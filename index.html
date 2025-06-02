@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ระบบเช็คเวลาเรียนนักศึกษาวิชาทหาร</title>
+  <!-- ลิงก์ไปไฟล์ CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- โลโก้โรงเรียน -->
+    <div class="logo-container">
+      <!-- เปลี่ยนลิงก์โลโก้ตามที่ได้แจ้ง (ลิงก์นี้คือโลโก้ตัวอย่าง) -->
+      <img id="school-logo" src="https://www.mks.ac.th/images/img_about/logo.png" alt="โลโก้โรงเรียน" />
+    </div>
+
+    <!-- ชื่อระบบ -->
+    <h1>ระบบเช็คเวลาเรียนนักศึกษาวิชาทหาร</h1>
+
+    <!-- ฟอร์มเลือกชั้นปีและวันที่ -->
+    <div class="form-section">
+      <label for="year-select">เลือกชั้นปี:</label>
+      <select id="year-select">
+        <option value="">-- เลือกชั้นปี --</option>
+        <option value="1">ชั้นปีที่ 1</option>
+        <option value="2">ชั้นปีที่ 2</option>
+        <option value="3">ชั้นปีที่ 3</option>
+      </select>
+
+      <label for="date-input">เลือกวันที่:</label>
+      <input type="date" id="date-input" />
+
+      <button id="load-students-btn">โหลดรายชื่อนักศึกษา</button>
+    </div>
+
+    <!-- ส่วนแสดงรายชื่อนักศึกษา (ในขั้นแรกจะซ่อน) -->
+    <div id="students-section" class="hidden">
+      <h2>รายชื่อนักศึกษา</h2>
+      <form id="attendance-form">
+        <!-- ตรงนี้จะเติม <div class="student-item">... </div> ให้โดย script.js -->
+        <div id="students-list"></div>
+        <button type="submit">บันทึกเช็คชื่อ</button>
+      </form>
+    </div>
+
+    <!-- ส่วนแสดงข้อความแจ้งเตือน / ผลลัพธ์ -->
+    <div id="message" class="message"></div>
+
+  </div>
+
+  <!-- เชื่อมไปยังไฟล์ script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
