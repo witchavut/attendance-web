@@ -3,7 +3,7 @@
    =============================== */
 
 // เปลี่ยนค่า URL ให้เป็น URL ของ Web App ที่คุณได้จากขั้นตอน Deploy GAS
-const API_BASE_URL = "https://script.google.com/macros/s/AKfycbwJeNS_jsRHg6pzWSnAZG7vxI44-Hfzec-xCuarHbk8XT4qkI8lxnlm9Dl089yEFSXQ/exec";
+const API_BASE_URL = "https://script.google.com/macros/s/AKfycbxt8fK4QJgWIcJJcRues7_bSAvXz6WS-f3b4dHT9ByaAM18K5MsPxVZm24UGbOybTjv/exec";
 
 document.addEventListener("DOMContentLoaded", function () {
   // อ้างอิง Element ต่าง ๆ
